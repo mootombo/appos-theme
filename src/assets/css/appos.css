@@ -230,6 +230,7 @@ li.divider {
   margin-bottom: 8px;
 }
 li.divider:before {
+
   content: "";
   display: inline-block;
 }
@@ -3415,7 +3416,8 @@ fieldset[disabled] .btn-light.active {
   margin-right: 0;
   margin-left: 4px;
 }
-.btn > .icon-only[class*="icon-"] {
+.btn > .icon-only[class*="fa-"],
+.btn > .icon-only[class*="glyphicon-"] {
   margin: 0;
   vertical-align: middle;
   text-align: center;
@@ -5257,7 +5259,7 @@ input[type=radio].appos + .lbl.padding-0::before {
 }
 input[type=checkbox].appos + .lbl::before,
 input[type=radio].appos + .lbl::before {
-  font-family: fontAwesome;
+  font-family: FontAwesome;
   font-weight: normal;
   font-size: 12px;
   color: #32a3ce;
