@@ -82,6 +82,21 @@
 					label="TPL_APPOSTHEME_FONT_NAME_LABEL"
 					description="TPL_APPOSTHEME_FONT_NAME_DESC" />
 
+				<field name="templateSkin"
+					type="radio"
+					class="btn-group"
+					default=""
+					label="TPL_APPOSTHEME_SKIN_LABEL"
+					description="TPL_APPOSTHEME_SKIN_DESC"
+				>
+					<option value="">TPL_APPOSTHEME_DEFAULT</option>
+					<option value="skin-1">TPL_APPOSTHEME_SKIN1</option>
+					<option value="skin-2">TPL_APPOSTHEME_SKIN2</option>
+					<option value="skin-3">TPL_APPOSTHEME_SKIN3</option>
+					<option value="skin-4">TPL_APPOSTHEME_SKIN4</option>
+					<option value="skin-5">TPL_APPOSTHEME_SKIN5</option>
+				</field>
+
 				<field name="fixedLayout"
 					type="radio"
 					class="btn-group"
