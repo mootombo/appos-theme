@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="template" client="site" method="upgrade">
+	<name>APPOSTHEME</name>
+	<version>1.0.0</version>
+	<creationDate>2013-11-01</creationDate>
+	<author>devXive</author>
+	<authorEmail>support@devxive.com</authorEmail>
+	<authorUrl>http://devxive.com</authorUrl>
+	<copyright>Copyright (C) 1997 - 2013 devXive - research and development. All rights reserved.</copyright>
+	<description>TPL_APPOSTHEME_XML_DESC</description>
+	<files>
+		<folder>assets</folder>
+		<folder>html</folder>
+		<folder>language</folder>
+		<folder>roksprocket</folder>
+		<filename>component.php</filename>
+		<filename>config.php</filename>
+		<filename>error.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.php</filename>
+		<filename>offline.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>raw.php</filename>
+	</files>
+	<positions>
+		<position>debug</position>
+		<position>breadcrumb</position>
+		<position>client-activity</position>
+		<position>dashboard-top</position>
+		<position>dashboard-left</position>
+		<position>dashboard-right</position>
+		<position>dashboard-bottom</position>
+		<position>footer</position>
+		<position>login</position>
+		<position>my-tasks</position>
+		<position>my-messages</position>
+		<position>search</position>
+		<position>sidebar</position>
+		<position>sidebar-shortcuts</position>
+	</positions>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_appos.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_appos.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="templateColor" class="" type="color" default="#08C"
+					label="TPL_APPOSTHEME_COLOR_LABEL"
+					description="TPL_APPOSTHEME_COLOR_DESC" />
+
+				<field name="templateBackgroundColor" class="" type="color" default="#F4F6F7"
+					label="TPL_APPOSTHEME_BACKGROUND_COLOR_LABEL"
+					description="TPL_APPOSTHEME_BACKGROUND_COLOR_DESC" />
+
+				<field name="logoFile" class="" type="media" default=""
+					label="TPL_APPOSTHEME_LOGO_LABEL"
+					description="TPL_APPOSTHEME_LOGO_DESC" />
+					
+				<field name="sitetitle"  type="text" default=""
+					label="JGLOBAL_TITLE"
+					description="JFIELD_ALT_PAGE_TITLE_LABEL"
+					filter="string" />
+
+				<field name="sitedescription"  type="text" default=""
+					label="JGLOBAL_DESCRIPTION"
+					description="JGLOBAL_SUBHEADING_DESC"
+					filter="string" />
+
+				<field name="googleFont"
+					type="radio"
+					class="btn-group"
+					default="1"
+					label="TPL_APPOSTHEME_FONT_LABEL"
+					description="TPL_APPOSTHEME_FONT_DESC"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="googleFontName" class="" type="text" default="Open+Sans"
+					label="TPL_APPOSTHEME_FONT_NAME_LABEL"
+					description="TPL_APPOSTHEME_FONT_NAME_DESC" />
+
+				<field name="fixedLayout"
+					type="radio"
+					class="btn-group"
+					default="1"
+					label="TPL_APPOSTHEME_FIXED_LAYOUT_LABEL"
+					description="TPL_APPOSTHEME_FIXED_LAYOUT_LABEL_DESC"
+				>
+					<option value="0">TPL_APPOSTHEME_FLUID</option>
+					<option value="1">TPL_APPOSTHEME_FIXED</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
