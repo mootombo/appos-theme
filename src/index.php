@@ -51,7 +51,9 @@ require_once(__DIR__ . '/config.php');
 
 </head>
 
-<body class="skin-5 site <?php echo $option
+<body class="<?php echo
+	( $option ? $option . ' ' : '')
+	. ($params->get('templateSkin') ? $params->get('templateSkin') : '')
 	. ' view-' . $view
 	. ($layout ? ' layout-' . $layout : ' no-layout')
 	. ($task ? ' task-' . $task : ' no-task')
@@ -70,7 +72,7 @@ require_once(__DIR__ . '/config.php');
 			<div class="navbar-header pull-left">
 				<a href="<?php echo $this->baseurl; ?>" class="navbar-brand">
 					<small>
-						<i class="fa-cloud"></i> <?php echo $logo; ?>
+						<i class="fa fa-cloud"></i> <?php echo $logo; ?>
 					</small>
 				</a><!-- /.navbar-brand -->
 			</div><!-- /.navbar-header -->
@@ -95,10 +97,6 @@ require_once(__DIR__ . '/config.php');
 			<a class="menu-toggler" id="menu-toggler" href="#"><span class="menu-text"></span></a>
 
 			<div class="sidebar <?php echo ($params->get('fixedLayout') ? 'sidebar-fixed' : ''); ?>" id="sidebar">
-				<script type="text/javascript">
-					try{ace.settings.check('sidebar' , 'fixed')}catch(e){}
-				</script>
-
 				<jdoc:include type="modules" name="sidebar-shortcuts" />
 				<!-- #sidebar-shortcuts -->
 
@@ -107,7 +105,7 @@ require_once(__DIR__ . '/config.php');
 				<!-- #XAP END MODULE -->
 
 				<div class="sidebar-collapse" id="sidebar-collapse">
-					<i class="fa-angle-double-left" data-icon1="fa-angle-double-left" data-icon2="fa-angle-double-right"></i>
+					<i class="fa fa-angle-double-left" data-icon1="fa fa-angle-double-left" data-icon2="fa fa-angle-double-right"></i>
 				</div>
 
 				<script type="text/javascript">
@@ -128,7 +126,7 @@ require_once(__DIR__ . '/config.php');
 				<div class="page-content">
 					<?php if($show_menu_text == 1) { ?>
 						<div class="page-header">
-							<h1><?php if($menu_anchor_icon): echo '<i class="' . $menu_anchor_icon . '"></i> '; endif; ?><?php echo $page_title; ?> <small><i class="fa-angle-double-right"></i> <?php echo $page_heading; ?></small></h1>
+							<h1><?php if($menu_anchor_icon): echo '<i class="' . $menu_anchor_icon . '"></i> '; endif; ?><?php echo $page_title; ?> <small><i class="fa fa-angle-double-right"></i> <?php echo $page_heading; ?></small></h1>
 						</div><!--/.page-header -->
 					<?php } ?>
 
@@ -159,7 +157,7 @@ require_once(__DIR__ . '/config.php');
 		</footer>
 
 		<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
-			<i class="fa-angle-double-up icon-only bigger-110"></i>
+			<i class="fa fa-angle-double-up icon-only bigger-110"></i>
 		</a>
 
 		<jdoc:include type="modules" name="debug" style="none" />
