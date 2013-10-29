@@ -39,8 +39,8 @@
 		<position>sidebar-shortcuts</position>
 	</positions>
 	<languages folder="language">
-		<language tag="en-GB">en-GB/en-GB.tpl_appos.ini</language>
-		<language tag="en-GB">en-GB/en-GB.tpl_appos.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_appostheme.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_appostheme.sys.ini</language>
 	</languages>
 	<config>
 		<fields name="params">
