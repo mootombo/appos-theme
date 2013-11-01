@@ -148,12 +148,12 @@ require_once(__DIR__ . '/config.php');
 
 		<!-- Footer -->
 		<hr />
-		<footer>
-			<div class="row">
+		<footer class="container">
+			<div class="">
 				<jdoc:include type="modules" name="footer" style="none" />
 			</div>
 
-			<div class="row" style="text-align: right;">&copy; <?php echo $sitename; ?> <?php echo date('Y');?></div>
+			<div class="" style="text-align: right;">&copy; <?php echo $sitename; ?> <?php echo date('Y');?></div>
 		</footer>
 
 		<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
