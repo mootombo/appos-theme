@@ -8,24 +8,17 @@
  */
 
 defined('_JEXEC') or die;
-JHtml::_('bootstrap.tooltip');
-
 ?>
-<!--
-<li><i class="icon-home"></i> <a href="#">Home</a><span class="divider"><i class="icon-angle-right"></i></span></li>
-<li><a href="#">Leitstelle</a> <span class="divider"><i class="icon-angle-right"></i></span></li>
-<li class="active">Auftragsannahme</li>
--->
 <ul class="breadcrumb <?php echo $moduleclass_sfx; ?>">
 	<?php
 	if ($params->get('showHere', 1))
 	{
-		echo '<li class="active"><span class="divider icon-location hasTooltip" title="' . JText::_('MOD_BREADCRUMBS_HERE') . '"></span></li>';
+		echo '<span>' . JText::_('MOD_BREADCRUMBS_HERE') . ' </span>';
 	}
 
 	if ($params->get('showHome', 1))
 	{
-		echo '<li><i class="icon-home"></i></li>';
+		echo '<li><i class="fa fa-home home-icon"></i></li>';
 	}
 
 	// Get rid of duplicated entries on trail including home page when using multilanguage
@@ -59,12 +52,6 @@ JHtml::_('bootstrap.tooltip');
 		{
 			echo '<span>' . $item->name . '</span>';
 		}
-
-		if (($key != $penult_item_key) || $show_last)
-		{
-			echo '<span class="divider"><i class="icon-angle-right"></i></span>';
-		}
-
 		echo '</li>';
 	}
 	elseif ($show_last)
