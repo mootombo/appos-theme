@@ -1601,8 +1601,6 @@ blockquote.pull-right {
   font-size: 14px;
   content: "\f105";
   color: #b2b6bf;
-  margin-right: 2px;
-  padding: 0 5px 0 2px;
   position: relative;
   top: 1px;
 }
