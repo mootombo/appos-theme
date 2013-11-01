@@ -56,20 +56,23 @@ MFWCoreFramework::loadMFW();
 // NFWHtml::loadCssFramework($includeMaincss = false, $this->direction);
 
 // Added template specific styles
-JHtml::_('stylesheet', 'templates/xiveapptheme/assets/css/ace.css', false, false);
-JHtml::_('stylesheet', 'templates/xiveapptheme/assets/css/ace-responsive.css', false, false);
-JHtml::_('stylesheet', 'templates/xiveapptheme/assets/css/skin5.css', false, false);
-JHtml::_('stylesheet', 'nawala/font-awesome.css', false, true);
-JHtml::_('stylesheet', 'nawala/nfw-icon-animation.css', false, true);
-JHtml::_('stylesheet', 'templates/xiveapptheme/assets/css/custom.css', false, false);
+JHtml::_('stylesheet', 'templates/appostheme/assets/css/appos.css', false, false);
+
+// Load the Skin
+if ( $params->get('templateSkin') ) {
+	JHtml::_('stylesheet', 'templates/appostheme/assets/css/' . $params->get('templateSkin') . '.css', false, false);
+}
+
+JHtml::_('stylesheet', 'mootombo/mfw-icon-animation.css', false, true);
+// JHtml::_('stylesheet', 'templates/appostheme/assets/css/appos-custom.css', false, false);
 
 // Added template specific scripts
-JHtml::_('script', 'templates/xiveapptheme/assets/js/uncompressed/ace-elements.js', false, false);
-JHtml::_('script', 'templates/xiveapptheme/assets/js/uncompressed/ace.js', false, false);
-JHtml::_('script', 'templates/xiveapptheme/assets/js/devxive/template.js', false, false);
+// JHtml::_('script', 'templates/xiveapptheme/assets/js/uncompressed/ace-elements.js', false, false);
+// JHtml::_('script', 'templates/xiveapptheme/assets/js/uncompressed/ace.js', false, false);
+// JHtml::_('script', 'templates/xiveapptheme/assets/js/devxive/template.js', false, false);
 
 // Set Siteready overlay function
-NFWHtmlJavascript::setSiteReadyOverlay();
+// NFWHtmlJavascript::setSiteReadyOverlay();
 
 // Logo file or site title param
 if ($params->get('logoFile'))
